@@ -18,7 +18,7 @@
     "lint:hbs:fix": "ember-template-lint . --fix",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
-    "start": "ember serve",
+    "start": "ember serve -a localhost -p 8000",
     "test": "npm-run-all lint test:*",
     "test:ember": "ember test"
   },
@@ -61,6 +61,9 @@
     "qunit-dom": "^2.0.0",
     "webpack": "^5.72.1"
   },
+  "dependencies": {
+    "@bryntum/gantt": "npm:@bryntum/gantt-trial@5.0.6"
+  },  
   "engines": {
     "node": "12.* || 14.* || >= 16"
   },
